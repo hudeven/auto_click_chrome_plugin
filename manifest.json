@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "怪兽必须死自动点击插件",
+  "description": "auto click chrome plugin for 怪兽必须死 in http://11h5.com/",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": ["http://*/*"],
+  "content_scripts":[
+  {
+      "matches":["file:///*", "http://play.11h5.com/*"],
+      "js":["auto_click.js"]
+  }
+  ]
+}
